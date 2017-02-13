@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This app will allow a user to add burgers to a list then eat burgers from the list. The burger data will be stored in an SQL database and be persistent.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentwoodcock/burger.git"
+  },
+  "author": "Brent Woodcock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brentwoodcock/burger/issues"
+  },
+  "homepage": "https://github.com/brentwoodcock/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0"
+  }
+}
