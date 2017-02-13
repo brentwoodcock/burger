@@ -10,15 +10,13 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
+// Override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 // Handlebars setup
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.use('/', routes);
-app.use('/update', routes);
-app.use('/create', routes);
 
 app.listen(PORT, function() {
 	console.log('Listening on port: ' + PORT);
