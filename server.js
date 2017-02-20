@@ -16,7 +16,7 @@ app.use(methodOverride('_method'));
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.use('/', routes);
+app.get('/', routes);
 
 app.listen(PORT, function() {
 	console.log('Listening on port: ' + PORT);
