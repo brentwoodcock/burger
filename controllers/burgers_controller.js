@@ -24,7 +24,7 @@ router.post('/burgers/create', function(req, res) {
 });
 
 // Update the devoured status of a burger based on user's request
-router.put('/burgers/update', function(req, res) {
+router.post('/burgers/update', function(req, res) {
 	burger.updateOne(req.body.burger_id, function(result) {
 		res.redirect('/');
 	});

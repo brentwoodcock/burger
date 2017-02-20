@@ -22,7 +22,7 @@ app.get('/burgers', routes);
 
 app.post('/burgers/create', routes);
 
-app.put('/burgers/update', routes);
+app.post('/burgers/update', routes);
 
 app.listen(PORT, function() {
 	console.log('Listening on port: ' + PORT);
